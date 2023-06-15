@@ -1,0 +1,126 @@
+/* 
+COLOR PALETTE
+White: #f5f5f5: Primary
+tbd: # : Third
+tbd #: Accent 1
+tbd #: Accent 2
+Black: #161616: Secondary
+Red: #tbd: Radical
+*/
+
+/* LOGO */
+.logo {
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    margin-top: 3em;
+    margin-left: 2em;
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: helvetica, arial, sans-serif;
+    float: left;
+    /*
+    text-shadow: .5px .5px 0px #f5f5f5, -.5px -.5px 0px #f5f5f5, -.5px .5px 0px #f5f5f5, .5px -.5px 0px #f5f5f5;
+    /*/
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        margin-left: 4em;
+    }
+}
+@media (min-width: 1200px) {
+    .logo {
+        margin-left: 6em;
+    }
+}
+
+/* MENU BUTTON */
+.toggle-btn {
+    z-index: 7;
+    position: fixed;
+    top: 0;
+    width: 35px;
+    height: 31px;
+    right: 0;
+    margin-right: 2em; 
+    margin-top: 3em;
+    mix-blend-mode: difference;
+}
+span.one {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #f5f5f5;
+    top: 0%;
+}
+span.two {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #f5f5f5;
+    top: 0%;
+    margin-top: 10px;
+}
+span.three {
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background: #f5f5f5;
+    top: 0%;
+    left: 7px;
+    margin-top: 20px;
+}
+
+/* MENU DROPDOWN */
+.menu {
+    z-index: 6;
+    position: fixed;
+    top: -100%; 
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+}
+@media (min-width: 768px){
+    .toggle-btn, .menu {
+        margin-right: 2em;
+    }
+}
+@media (min-width: 1024px){
+    .toggle-btn {
+        margin-right: 4em;
+    }
+}
+@media (min-width: 1200px){
+    .menu-2 {
+        margin-right: 6em;
+    }
+}
+
+/* LINKS */
+.list {
+    position: absolute;
+    top: 0%;
+    padding: 6em 0 0 2em;
+    margin-top: 4em;
+}
+.list ul {
+    text-align: left;
+    list-style: none;
+}
+.list li {
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;
+    margin-top: 1em;
+}
+.list a {
+    font-size: 4em;
+    text-decoration: none;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    cursor: crosshair;
+}
+
